@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+.radial-card {
+  width: 200px;
+  padding: 32px 0;
+  border-radius: 11px;
+  background: radial-gradient(
+    circle at top,
+    #eef2ff,
+    #fff 70%
+  );
+  color: #111827;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0f172a;
+  }
+
+  .radial-card {
+    background: radial-gradient(
+      circle at top,
+      #1e1b4b,
+      #020617 70%
+    );
+    color: #e5e7eb;
+  }
+}
